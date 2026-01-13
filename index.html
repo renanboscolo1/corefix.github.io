@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
-  <title>CoreFix Portfólio</title>
+  <title>Titech Portfólio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -22,7 +23,7 @@
 
     header {
       padding: 40px 20px;
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      background: linear-gradient(135deg, #1143cb, #25bffc);
       text-align: center;
     }
 
@@ -35,11 +36,11 @@
     }
 
     .logo-img {
-      width: 72px;
-      height: 72px;
+      width: 102px;
+      height: 102px;
       border-radius: 50%;
       overflow: hidden;
-      border: 2px solid rgba(255,255,255,0.7);
+      border: 2px solid rgba(255, 255, 255, 0.7);
     }
 
     .logo-img img {
@@ -55,7 +56,7 @@
     }
 
     h2 {
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       border-left: 4px solid #2575fc;
       padding-left: 10px;
     }
@@ -65,7 +66,8 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
-      align-items: start; /* ISSO resolve a esticada */
+      align-items: start;
+      /* ISSO resolve a esticada */
     }
 
     /* ===== CARD ===== */
@@ -73,12 +75,13 @@
       background: #181818;
       padding: 20px;
       border-radius: 8px;
-      align-self: start; /* reforço */
+      align-self: start;
+      /* reforço */
       transition: box-shadow 0.3s ease;
     }
 
     details.card[open] {
-      box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
     }
 
     details.card summary {
@@ -120,7 +123,7 @@
         max-height 0.4s ease,
         opacity 0.3s ease,
         transform 0.3s ease;
-      border-top: 1px solid rgba(255,255,255,0.1);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
       margin-top: 10px;
       padding-top: 0;
       font-size: 0.9rem;
@@ -146,15 +149,15 @@
     }
 
     .social-btn {
-      width: 48px;
-      height: 48px;
+      width: 68px;
+      height: 68px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       color: #fff;
       text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
       transition: transform 0.25s ease;
     }
 
@@ -162,9 +165,17 @@
       transform: scale(1.15);
     }
 
-    .whatsapp { background: #25D366; }
-    .instagram { background: linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045); }
-    .facebook { background: #1877f2; }
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .instagram {
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    }
+
+    .facebook {
+      background: #1877f2;
+    }
 
     footer {
       text-align: center;
@@ -183,93 +194,100 @@
 
 <body>
 
-<header>
-  <div class="header-top">
-    <div class="logo-img">
-      <img src="sua-imagem.png" alt="Logo CoreFix">
+  <header>
+    <div class="header-top">
+      <div class="logo-img">
+        <img src="sua-imagem.png" alt="Logo CoreFix">
+      </div>
+      <div>
+        <h1>TITECH</h1>
+        <p>Assistência Técnica • Informática • Suporte</p>
+      </div>
     </div>
-    <div>
-      <h1>CoreFix</h1>
-      <p>Assistência Técnica • Informática • Suporte</p>
+  </header>
+
+  <div class="social-float">
+    <a href="https://wa.me/5515996642987" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/_titech/" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+  </div>
+  <section class="sobre">
+    <h2>Sobre mim</h2>
+    <p>
+      Olá! Bem-vindo à Titech. Me chamo Renan e trabalho com assistência técnica,
+      manutenção, formatação e montagem de computadores.
+    </p>
+  </section>
+  <section>
+    <h2>Serviços disponíveis</h2>
+
+    <div class="projetos">
+
+      <details class="card">
+        <summary>
+          <div class="card-header">
+            <h3>Formatação</h3>
+            <p>Formatação de computadores</p>
+            <span class="saiba-mais">Saiba mais</span>
+          </div>
+        </summary>
+        <div class="card-content">
+          Windows e Linux, backup de arquivos,
+          instalação de drivers e otimização básica.
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          <div class="card-header">
+            <h3>Limpeza</h3>
+            <p>Limpeza geral de hardware</p>
+            <span class="saiba-mais">Saiba mais</span>
+          </div>
+        </summary>
+        <div class="card-content">
+          Limpeza interna, troca de pasta térmica
+          e revisão geral do equipamento.
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          <div class="card-header">
+            <h3>Montagem de PC</h3>
+            <p>Guia ou montagem completa</p>
+            <span class="saiba-mais">Saiba mais</span>
+          </div>
+        </summary>
+        <div class="card-content">
+          Ajuda na escolha de peças,
+          montagem completa e testes finais.
+        </div>
+      </details>
+
+      <details class="card">
+        <summary>
+          <div class="card-header">
+            <h3>Edição</h3>
+            <p>Fotos, vídeos e artes</p>
+            <span class="saiba-mais">Saiba mais</span>
+          </div>
+        </summary>
+        <div class="card-content">
+          Edição básica de imagens,
+          vídeos curtos e artes para redes sociais.
+        </div>
+      </details>
+
     </div>
-  </div>
-</header>
+  </section>
 
-<div class="social-float">
-  <a href="https://wa.me/5515996642987" class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
-  <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i></a>
-  <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
-</div>
-
-<section>
-  <h2>Serviços disponíveis</h2>
-
-  <div class="projetos">
-
-    <details class="card">
-      <summary>
-        <div class="card-header">
-          <h3>Formatação</h3>
-          <p>Formatação de computadores</p>
-          <span class="saiba-mais">Saiba mais</span>
-        </div>
-      </summary>
-      <div class="card-content">
-        Windows e Linux, backup de arquivos,
-        instalação de drivers e otimização básica.
-      </div>
-    </details>
-
-    <details class="card">
-      <summary>
-        <div class="card-header">
-          <h3>Limpeza</h3>
-          <p>Limpeza geral de hardware</p>
-          <span class="saiba-mais">Saiba mais</span>
-        </div>
-      </summary>
-      <div class="card-content">
-        Limpeza interna, troca de pasta térmica
-        e revisão geral do equipamento.
-      </div>
-    </details>
-
-    <details class="card">
-      <summary>
-        <div class="card-header">
-          <h3>Montagem de PC</h3>
-          <p>Guia ou montagem completa</p>
-          <span class="saiba-mais">Saiba mais</span>
-        </div>
-      </summary>
-      <div class="card-content">
-        Ajuda na escolha de peças,
-        montagem completa e testes finais.
-      </div>
-    </details>
-
-    <details class="card">
-      <summary>
-        <div class="card-header">
-          <h3>Edição</h3>
-          <p>Fotos, vídeos e artes</p>
-          <span class="saiba-mais">Saiba mais</span>
-        </div>
-      </summary>
-      <div class="card-content">
-        Edição básica de imagens,
-        vídeos curtos e artes para redes sociais.
-      </div>
-    </details>
-
-  </div>
-</section>
-
-<footer>
-  <a href="#">Instagram</a>
-  <a href="#">WhatsApp</a>
-  <a href="#">Facebook</a>
-</footer>
+  <footer>
+    <a href="#">Instagram</a>
+    <a href="#">WhatsApp</a>
+    <a href="#">Facebook</a>
+  </footer>
 
 </body>
+
 </html>
